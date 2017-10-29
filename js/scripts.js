@@ -2,8 +2,8 @@
 
 var name = prompt('Enter your name');
 // abc
-alert('Hello, ' + name);
+
 /*
-abc
+alert('Hello, ' + name);
 */
 console.log('Hello, ' + name);
