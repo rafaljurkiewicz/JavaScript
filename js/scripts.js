@@ -39,8 +39,7 @@ console.log(allNames);
 
 var newName = 'Marian';
 if ( allNames.indexOf(newName) === -1 ) {
-	var x = allNames.push(newName);
+	allNames.push(newName);
 }
 
-console.log(x);
 console.log(allNames);
