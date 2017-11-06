@@ -23,6 +23,7 @@ if (value > 0) {
 }
 
 
+
 // 9.1
 function getTriangleArea (a, h) {
 	if ( (a <= 0) || (h <= 0) ) {
@@ -36,7 +37,6 @@ console.log(getTriangleArea(10, 6))
 var triangle1Area = getTriangleArea(10, 15);
 var triangle2Area = getTriangleArea(10, 20);
 var triangle3Area = getTriangleArea(10, 25);
-*/
 
 // 9.2
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
@@ -51,3 +51,16 @@ if ( allNames.indexOf(newName) === -1 ) {
 }
 
 console.log(allNames);
+
+*/
+
+
+var text = 'Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.';
+var dinosaur = 'triceratops';
+var dinosaurUpperCased = dinosaur.toUpperCase();
+var textAfter = text.replace('Velociraptor', dinosaurUpperCased);
+var textLength = textAfter.length;
+var partOfText = textAfter.slice(0,textLength/2);
+
+console.log(partOfText);
+
