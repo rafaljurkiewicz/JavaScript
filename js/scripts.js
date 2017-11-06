@@ -41,7 +41,7 @@ if ( allNames.indexOf(newName) === -1 ) {
 }
 
 console.log(allNames);
-*/
+
 
 
 var text = 'Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.';
@@ -52,3 +52,21 @@ var textLength = textAfter.length;
 var partOfText = textAfter.slice(0,textLength/2);
 
 console.log(partOfText);
+*/
+
+
+function drawTree(a) {
+	for (var i = 1 ; i <= a ; i++) {
+		var star = '';
+		for ( var j = 1 ; j <= i ; j++) {
+			star += '*';
+		}
+		console.log(star);
+	}
+}
+
+console.log(drawTree(10)); 
+		
+
+
+
