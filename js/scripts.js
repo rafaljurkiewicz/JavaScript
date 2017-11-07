@@ -63,7 +63,6 @@ var partOfText = textAfter.slice(0,textLength/2);
 
 console.log(partOfText);
 
-*/
 
 // 9.4
 function drawTree(a) {
@@ -77,5 +76,13 @@ function drawTree(a) {
 }
 
 console.log(drawTree(10)); 
-
+*/
+		
+// 9.5
+var buttonClass = document.getElementsByClassName('button');
+var buttonClassLength = buttonClass.length;
+for (var i= 0 ; i <= buttonClass.length ; i++) {
+	var buttonInnerText = buttonClass[i].innerText;
+	alert(buttonInnerText);
+}
 
