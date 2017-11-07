@@ -1,6 +1,16 @@
 // scripts.js file
 
-/*
+/* 
+// 8.5
+var name = prompt('Enter your name'),
+	a = prompt('Enter base of triangle'),
+	h = prompt('Enter height of triangle'),
+	triangleArea = a*h/2;
+alert('Hello, ' + name + ' Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea),
+console.log('Hello, ' + name + ' Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea);
+
+
+// 8.6
 var	a = prompt('Enter a value'),
 	b = prompt('Enter b value'),
 	value = (a * a) - (2 * a * b) + (b * b);
@@ -14,6 +24,7 @@ if (value > 0) {
 
 
 
+// 9.1
 function getTriangleArea (a, h) {
 	if ( (a <= 0) || (h <= 0) ) {
 		console.log('Wrong data');
@@ -27,8 +38,7 @@ var triangle1Area = getTriangleArea(10, 15);
 var triangle2Area = getTriangleArea(10, 20);
 var triangle3Area = getTriangleArea(10, 25);
 
-
-
+// 9.2
 var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
 var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
 var allNames = femaleNames.concat(maleNames);
@@ -43,7 +53,7 @@ if ( allNames.indexOf(newName) === -1 ) {
 console.log(allNames);
 
 
-
+// 9.3
 var text = 'Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.';
 var dinosaur = 'triceratops';
 var dinosaurUpperCased = dinosaur.toUpperCase();
@@ -54,7 +64,7 @@ var partOfText = textAfter.slice(0,textLength/2);
 console.log(partOfText);
 
 
-
+// 9.4
 function drawTree(a) {
 	for (var i = 1 ; i <= a ; i++) {
 		var star = '';
@@ -68,10 +78,11 @@ function drawTree(a) {
 console.log(drawTree(10)); 
 */
 		
-
+// 9.5
 var buttonClass = document.getElementsByClassName('button');
 var buttonClassLength = buttonClass.length;
 for (var i= 0 ; i <= buttonClass.length ; i++) {
 	var buttonInnerText = buttonClass[i].innerText;
 	alert(buttonInnerText);
 }
+
