@@ -66,7 +66,7 @@ function drawTree(a) {
 }
 
 console.log(drawTree(10)); 
-*/
+
 		
 
 var buttonClass = document.getElementsByClassName('button');
@@ -75,3 +75,15 @@ for (var i= 0 ; i <= buttonClass.length ; i++) {
 	var buttonInnerText = buttonClass[i].innerText;
 	alert(buttonInnerText);
 }
+*/
+
+var list = document.getElementById('list');
+var add = document.getElementById('addElem');
+
+add.addEventListener('click', function(adding) {
+	var element = document.createElement('li');
+	var liTag = document.getElementsByTagName('li');
+	var liTagLength = liTag.length;
+	element.innerHTML = 'item' + ' ' + liTagLength;
+	list.appendChild(element);
+});
